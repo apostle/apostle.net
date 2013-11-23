@@ -1,0 +1,4 @@
+﻿<appSettings>
+    <add key="ApostleDomainKey" value="<your apostle domain key>" />
+    <add key="TestEmailAddress" value="<your email address>" />
+</appSettings>
