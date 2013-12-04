@@ -46,12 +46,14 @@
   <ItemGroup>
     <Compile Include="Apostle.cs" />
     <Compile Include="DeliveryHosts.cs" />
+    <Compile Include="DeliveryResult.cs" />
+    <Compile Include="Enums\DeliveryStatus.cs" />
     <Compile Include="Exceptions\MissingDeliveryHostnameException.cs" />
     <Compile Include="Exceptions\MissingDomainKeyException.cs" />
+    <Compile Include="JsonConverters\MailQueueConverter.cs" />
     <Compile Include="Mail.cs" />
     <Compile Include="MailQueue.cs" />
     <Compile Include="MailSender.cs" />
-    <Compile Include="MailConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
