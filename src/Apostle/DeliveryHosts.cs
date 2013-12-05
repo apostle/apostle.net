@@ -1,4 +1,4 @@
-﻿namespace Apostle.Net
+﻿namespace Apostle
 {
     /// <summary>
     /// This class uses the type-safe-enum pattern to restrict the available options when setting

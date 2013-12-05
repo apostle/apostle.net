@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
-namespace Apostle.Net
+namespace Apostle
 {
     /// <summary>
     /// Represents the mail object of the Apostle.io service.
@@ -60,8 +60,8 @@ namespace Apostle.Net
             Apostle.Validate();
 
             // so that we only have to write one json serializer, we'll just
-            // send this Mail as a MailQueue with just one recipient
-            var mailQueue = new MailQueue { this };
+            // send this Mail as a Queue with just one recipient
+            var mailQueue = new Queue { this };
             return mailQueue.Deliver();
         }
     }

@@ -1,14 +1,14 @@
-﻿using Apostle.Net.JsonConverters;
+﻿using Apostle.JsonConverters;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Apostle.Net
+namespace Apostle
 {
     /// <summary>
     /// Stores a collection of Mail instances that will be sent in bulk to the Apostle.io api
     /// </summary>
     [JsonConverter(typeof(MailQueueConverter))]
-    public class MailQueue : List<Mail>
+    public class Queue : List<Mail>
     {
         /// <summary>
         /// Ensures that the Apostle configuration is valid and then delivers the mail

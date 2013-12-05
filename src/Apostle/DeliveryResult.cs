@@ -1,6 +1,6 @@
-﻿using Apostle.Net.Enums;
+﻿using Apostle.Enums;
 
-namespace Apostle.Net
+namespace Apostle
 {
     public class DeliveryResult
     {

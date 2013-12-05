@@ -1,10 +1,10 @@
-﻿using Apostle.Net.Enums;
-using Apostle.Net.Exceptions;
-using NUnit.Framework;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Diagnostics;
+using Apostle.Enums;
+using Apostle.Exceptions;
+using NUnit.Framework;
 
-namespace Apostle.Net.Tests
+namespace Apostle.Tests
 {
     [TestFixture]
     public class Tests
@@ -53,7 +53,7 @@ namespace Apostle.Net.Tests
         [Test]
         public void Can_Send_Multiple_Emails_With_Full_Data()
         {
-            var mailQueue = new MailQueue();
+            var mailQueue = new Queue();
 
             for (int i = 0; i < 5; i++)
             {
@@ -69,7 +69,7 @@ namespace Apostle.Net.Tests
         [Test]
         public void Can_Send_Multiple_Emails_With_Minimal_Data()
         {
-            var mailQueue = new MailQueue();
+            var mailQueue = new Queue();
 
             // create three mail instances
             mailQueue.Add(new Mail("welcome", _testEmailAddress));

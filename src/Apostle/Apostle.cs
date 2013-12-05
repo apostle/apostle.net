@@ -1,6 +1,6 @@
-﻿using Apostle.Net.Exceptions;
+﻿using Apostle.Exceptions;
 
-namespace Apostle.Net
+namespace Apostle
 {
     /// <summary>
     /// Main configuration for the Apostle.io service. This class is responsible for storing and validating the domain key

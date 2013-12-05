@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apostle.Net.Tests", "Apostle.Net.Tests\Apostle.Net.Tests.csproj", "{AAA01DF4-7CBD-444A-A75B-35135F858499}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apostle.Tests", "Apostle.Tests\Apostle.Tests.csproj", "{AAA01DF4-7CBD-444A-A75B-35135F858499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apostle.Net", "Apostle.Net\Apostle.Net.csproj", "{175D4CAD-9ED8-4A88-A583-1EC25276C29C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apostle", "Apostle\Apostle.csproj", "{175D4CAD-9ED8-4A88-A583-1EC25276C29C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E11FB80F-BC28-4F18-9C2E-D9455D9E976F}"
 	ProjectSection(SolutionItems) = preProject

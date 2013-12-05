@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Apostle.Net.Exceptions
+namespace Apostle.Exceptions
 {
     [Serializable]
     public class MissingDeliveryHostnameException : Exception

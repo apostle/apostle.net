@@ -1,9 +1,9 @@
-﻿using Apostle.Net.Enums;
-using Newtonsoft.Json;
-using System.IO;
+﻿using System.IO;
 using System.Net;
+using Apostle.Enums;
+using Newtonsoft.Json;
 
-namespace Apostle.Net
+namespace Apostle
 {
     internal class MailSender
     {
@@ -19,18 +19,18 @@ namespace Apostle.Net
         //    return Send(jsonPayload);
         //}
 
-        internal static DeliveryResult Deliver(MailQueue mailQueue)
+        internal static DeliveryResult Deliver(Queue queue)
         {
             // convert the mail to json format
-            var jsonPayload = ConvertMailQueueToJson(mailQueue);
+            var jsonPayload = ConvertMailQueueToJson(queue);
 
             // send the mail
             return Send(jsonPayload);
         }
 
-        private static string ConvertMailQueueToJson(MailQueue mailQueue)
+        private static string ConvertMailQueueToJson(Queue queue)
         {
-            var json = JsonConvert.SerializeObject(mailQueue, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            var json = JsonConvert.SerializeObject(queue, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
             return json;
         }
 

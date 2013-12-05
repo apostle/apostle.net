@@ -1,4 +1,4 @@
-﻿namespace Apostle.Net.Enums
+﻿namespace Apostle.Enums
 {
     public enum DeliveryStatus
     {

@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using Newtonsoft.Json;
 
-namespace Apostle.Net.JsonConverters
+namespace Apostle.JsonConverters
 {
     public class MailQueueConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType)
         {
-            return objectType.IsAssignableFrom(typeof(MailQueue));
+            return objectType.IsAssignableFrom(typeof(Queue));
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
@@ -17,7 +17,7 @@ namespace Apostle.Net.JsonConverters
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            var mailQueue = (MailQueue)value;
+            var mailQueue = (Queue)value;
 
             // start the json document
             writer.WriteStartObject();
