@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Apostle</id>
+        <version>1.0.0</version>
+        <title>Apostle.io api client for .net</title>
+        <authors>Wes Shaddix</authors>
+        <owners>Wes Shaddix</owners>
+        <projectUrl>https://github.com/apostle/apostle.net</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Apostle.io api client for .net</description>
+        <releaseNotes>Initial release.</releaseNotes>
+        <tags>apostle mail email</tags>
+        <dependencies>
+            <dependency id="Newtonsoft.Json" version="5.0.8" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\Apostle.dll" target="lib\net40\Apostle.dll" />
+    </files>
+</package>
