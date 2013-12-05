@@ -1,7 +1,7 @@
 Apostle .Net
 ===========
 
-.Net client for [Apostle.io](http://apostle.io/ "Apostle.io")
+.Net bindings for [Apostle.io](http://apostle.io/ "Apostle.io")
 
 ## Installation
 To install Json.NET, run the following command in the [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console)
@@ -26,7 +26,7 @@ To send mail you need a minimum of three things:
 Once you are ready to send mail you can simply do the following:
 ```csharp
 Apostle.DomainKey = "<your domain key>";
-var mail = new Mail("template name>", "<recipient email address>");
+var mail = new Mail("<template name>", "<recipient email address>");
 var deliveryResults = mail.Deliver();
 ```
 
