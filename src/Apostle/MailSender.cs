@@ -1,7 +1,8 @@
-﻿using System.IO;
-using System.Net;
-using Apostle.Enums;
+﻿using Apostle.Enums;
 using Newtonsoft.Json;
+using System.IO;
+using System.Net;
+using System.Reflection;
 
 namespace Apostle
 {
@@ -46,7 +47,11 @@ namespace Apostle
             httpWebRequest.ContentType = ContentType;
             httpWebRequest.Method = "POST";
 
+            var currentVersion = Assembly.GetCallingAssembly().GetName().Version;
+            var semVer = string.Concat(currentVersion.Major, ".", currentVersion.Minor, ".", currentVersion.Build);
+
             httpWebRequest.Headers.Add("Authorization", string.Format(AuthHeaderTemplate, Apostle.DomainKey));
+            httpWebRequest.Headers.Add("Apostle-Client", string.Concat(".Net/", semVer));
 
             return httpWebRequest;
         }
